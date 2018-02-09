@@ -103,18 +103,4 @@
     return newString;
 }
 
-+ (UIActivityIndicatorView*)startLoader:(UIView*)view withSpinner:(UIActivityIndicatorView*)spinner
-{
-    spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    [spinner setCenter:CGPointMake(315,20)];
-    [view addSubview:spinner];
-    [spinner startAnimating];
-    return spinner;
-}
-
-+ (void)stopAnimating:(UIActivityIndicatorView*)spinner
-{
-    [spinner stopAnimating];
-}
-
 @end
